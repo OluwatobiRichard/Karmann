@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Karmann Landing Page </title>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
         <header id="header">
             <nav>
                 <!--Left side  links-->
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a hrefe="#">Used Parts</a></li>
+                <ul class="first">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">USED PARTS</a></li>
                 </ul>
 
                 <!--Center Logo-->
@@ -18,14 +22,14 @@
                 </div>
 
                 <!--Right side Links-->
-                <ul>
-                    <li><a hreflang="#">New Parts</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                <ul class="second">
+                    <li><a href="#">NEW PARTS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
                 </ul>
             </nav>
             <div class="header">
                 <h1>Restore Your Classic Porsche with parts from </h1>
-                <p>We specialise in finding rare and high-quality parts for your Porsche 356 and early 911</p>
+                <h3>We specialise in finding rare and high-quality parts for your Porsche 356 and early 911</h3>
             </div>
         </header>
 
@@ -35,7 +39,7 @@
              <!--About karmann Konnection-->
             <div class="about-karmann">
                 <div class="sub-about-karamann">
-                    <h2>Welcome to karmann Konnectio</h2>
+                    <h2>Welcome to karmann Konnection</h2>
                     <P>Over the last 40 years Karmann Konnection has grown to become one of the leading suppliers of restoration parts and accessories for Porsche 356 and early 911 vehicles.</P>
                 </div>
                 <div class="about-aim">
@@ -47,10 +51,81 @@
             <!--Our Services-->
             <div class="our-services">
                 <h2>Our Services</h2>
-                <div class="">
+                <div class="Parts-Sourcing">
+                    <img src="images/part sourcing.jpg"alt="Parts Sourcing Image">
+                    <h3>Parts Sourcing</h3>
+                    <p>We specialise in finding rare and high-quality parts, just let us know what you need and we’ll find it.</p>
+                </div>
 
+                <div class="Trade-shows">
+                    <img src="images/Trade shows.jpg"alt="Parts Sourcing Image">
+                    <h3>Trade Shows</h3>
+                    <p>Visit our trading stand at national and international Porsche events to explore our extensive inventory in person.</p>
+                </div>
+
+                <div class="Restoration-Consulting">
+                    <img src="images/Restoration Consulting.jpg"alt="Parts Sourcing Image">
+                    <h3>Restoration Consulting</h3>
+                    <p>Our experts provide guidance on full vehicle restorations, ensuring every detail is perfect for your classic Porsche.</p>
+                </div>
+            </div>
+
+            <!--Getting the parts to you-->
+            <div class="getting-the-part">
+                <h2>Getting the parts to you</h2>
+                <div class="parts">
+                    <p>Having built many cars from the ground up we know how important it is to get the right part for the job. We have a trade stand at many national & international Porsche events So if needed we can deliver in person or you can come to our shop which is in Southend-on-Sea, Essex, England. we have 1,000’s of parts in stock.</p>
+                </div>
+                <div class="parts1">
+                    <p>With more than 30 years mail order experience, your parts will be despatched to you with speed and efficiency whether it’s for a long term restoration, or your daily driver.</p>
+                </div>
+            </div>
+
+            <!--Contact Us-->
+            <div class="contact-us">
+                <P>Call us today on 01702 340613 Email us at info@karmannkonnection.co.uk  or message us via the form below</P>
+                
+                <div class="form">
+                    <form action="Submit" method="Post">
+                        <input type="text" id="name" name="name" placeholder="Name" required> <br><br>
+                        <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Tel" required><br><br>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    </form>
                 </div>
             </div>
         </section>
+
+        <!--Footer Section-->
+        <footer>
+            <div class="footer">
+                <div class="footer-img">
+                    <img src="" alt="footer image">
+                </div>
+
+                <div class="footer-address">
+                    <p>Karmann Konnection 289 Victoria Ave,  Southend-on-Sea  SS2 6NE</p>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-number">
+                        <img src="images/tel-removebg-preview.png" alt="phone icon">
+                        <p>01702 340613</p>
+                    </div>
+                    <div class="footer-email">
+                        <img src="images/email-removebg-preview.png" alt="email icon">
+                        <p>info@karmannkonnection.co.uk</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com">
+                        <img src="images/facebook-removebg-preview.png" alt="Facebook logo">
+                    </a>
+
+                    <a href="https://www.instagram.com">
+                        <img src="images/ig-removebg-preview.png" alt="Instagram logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
