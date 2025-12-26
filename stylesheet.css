@@ -205,7 +205,7 @@ nav img {
 }
 
 /* Our services container: constrain and center */
-.our-services {
+#our-services {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
@@ -370,7 +370,7 @@ nav img {
     text-transform: uppercase;
 }
 
-.contact-us {
+#contact-us {
     height: 626px;
     width: 90%;
     max-width: 1100px;
