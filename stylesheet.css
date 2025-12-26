@@ -357,5 +357,225 @@ nav img {
     height: 626px;
     width: 90vw;
     margin: 50px auto 0;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: #000;
+}
+.contact-info {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 3px;
+    word-spacing: 11%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.contact-info a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.input-group {
+  width: 100%;
+}
+
+.top-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+input, textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.top-row input {
+  flex: 1;
+  min-width: 200px;
+}
+
+textarea {
+
+    margin-top: 40px;
+    height: 150px;
+    resize: none;
+}
+
+.submit-btn {
+    margin-top: 40px;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-row {
+    flex-direction: column;
+  }
+}
+
+/* Footer overall */
+footer { background: #d9be89; color: #111; }
+
+/* Container that matches the structure you provided */
+.footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1rem;
+}
+
+/* Left: logo */
+.footer-img {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.footer-img img {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  border-radius: 6px; /* optional */
+  display: block;
+}
+
+/* Center: address */
+.footer-address {
+  flex: 1 1 380px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.footer-address address {
+  font-style: normal;
+  line-height: 1.35;
+  color: #222;
+  font-size: 14px;
+}
+
+/* Right: contact group */
+.footer-contact {
+  flex: 0 0 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+  padding: 0 0.25rem;
+}
+.footer-contact img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.footer-number,
+.footer-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #111;
+  font-size: 14px;
+}
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-contact a:hover { text-decoration: underline; }
+
+/* Social icons column (right-most) */
+.footer-social {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+.footer-social .social-link {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: rgba(0,0,0,0.06);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* Bottom copyright bar */
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.4rem 1rem;
+  color: #333;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.02), transparent);
+  font-size: 13px;
+}
+
+/* Responsive behavior */
+@media (max-width: 860px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-address { padding: 0.5rem 0; }
+  .footer-contact {
+    align-items: center;
+    order: 3;
+    width: 100%;
+  }
+  .footer-contact .footer-number,
+  .footer-contact .footer-email {
+    justify-content: center;
+  }
+  .footer-social {
+    flex-direction: row;
+    gap: 0.5rem;
+    order: 4;
+    padding-left: 0;
+  }
+  .footer-img { order: 1; margin-bottom: 0.25rem; }
+  .footer-address { order: 2; }
+  .footer-bottom { text-align: center; }
 }
 
